@@ -1,6 +1,10 @@
 package fr.gtm.monopoly;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Joueur {
+	private List<Propriete> propietes = new ArrayList<Propriete> ();
 	private String nom;
 	private Pion pion;
 	private int solde = 1500 ;
@@ -47,4 +51,10 @@ public class Joueur {
 	public String toString() {
 		return "Joueur [" + nom + ", solde=" + solde + "]";
 	}
-}
+	public List<Propriete> getPropietes() {
+		return propietes;
+	}
+	public void setPropietes(List<Propriete> propietes) {
+		this.propietes = propietes;
+	}
+	}

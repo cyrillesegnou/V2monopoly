@@ -1,5 +1,4 @@
 package fr.gtm.monopoly;
-
 public class Pion {
 	private String nom;
 	private Joueur joueur;
@@ -8,8 +7,7 @@ public class Pion {
 	public Pion(String nom) {
 		this.nom = nom;
 	}
-	
-	public String getNom() {
+		public String getNom() {
 		return nom;
 	}
 	public void setNom(String nom) {
@@ -27,7 +25,6 @@ public class Pion {
 	public void setPosition(Case position) {
 		this.position = position;
 	}
-
 	public void avancer(int r) {
 		for(int i=0 ; i<r-1 ; i++) {
 			position = position.getSuivante();
@@ -36,7 +33,4 @@ public class Pion {
 		position = position.getSuivante();
 		position.arreter(this);
 	}
-
-
-
 }
