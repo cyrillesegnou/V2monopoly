@@ -14,7 +14,6 @@ public class Monopoly {
 			j.getPion().setPosition(plateau.getCaseDepart());
 		}
 	}
-	
 	public void demarrer() {
 		System.out.println("Monopoly : lancement du jeu");
 		for(int i=0 ; i<10 ; i++) {
@@ -23,5 +22,4 @@ public class Monopoly {
 			}
 		}
 	}
-
 }
